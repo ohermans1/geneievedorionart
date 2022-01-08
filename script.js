@@ -26,7 +26,7 @@ closeShare = (e) => {
 };
 
 clipboard = () => {
-  navigator.clipboard.writeText("URL");
+  navigator.clipboard.writeText("www.genevievedorion.art");
   copyText.innerHTML = "Copied";
 };
 
@@ -47,7 +47,7 @@ hideLoader = () => {
 
 // Code
 
-// Makes loader play on only first load. 
+// Makes loader play on only first load.
 if (document.querySelector("h1").innerHTML === "Genevieve Dorion | Art") {
   let loader = document.querySelector("#loader");
   if (sessionLoader === "1") {
@@ -60,4 +60,3 @@ shareButton.addEventListener("click", openShare);
 shareCloseButton.addEventListener("click", closeShare);
 sharePopup.addEventListener("click", closeShare);
 copyToClipboard.addEventListener("click", clipboard);
-
