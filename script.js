@@ -31,7 +31,6 @@ clipboard = () => {
 };
 
 hideLoader = () => {
-  console.log(sessionLoader);
   if (sessionLoader === "1") {
     loader.style.display = "none";
   } else {
